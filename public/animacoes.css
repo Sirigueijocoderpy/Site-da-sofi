@@ -1,0 +1,287 @@
+/* ===== ANIMAÇÕES PARA O PORTFÓLIO DA SOFIA ===== */
+
+/* Animação da Estrela Girando */
+@keyframes estrelaGirando {
+  0% { transform: rotate(0deg) scale(1); filter: brightness(1); }
+  50% { transform: rotate(180deg) scale(1.1); filter: brightness(1.3) drop-shadow(0 0 8px #ffd700); }
+  100% { transform: rotate(360deg) scale(1); filter: brightness(1); }
+}
+
+.estrela, .estrela2, .estrela-tempo {
+  animation: estrelaGirando 4s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+/* Efeito Typewriter no PORTFOLIO */
+@keyframes typewriter {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 50% { border-color: transparent; }
+  51%, 100% { border-color: #421017; }
+}
+
+.diferente {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter 3s steps(9) 1s forwards, blink 1s step-end infinite;
+  border-right: 3px solid #421017;
+  width: 0;
+}
+
+/* Animação da Foto de Capa com Hover 3D */
+.capa {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.capa:hover {
+  transform: scale(1.05) rotateY(5deg) rotateX(5deg);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+  filter: brightness(1.1);
+}
+
+/* Animação dos Links Sociais */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.links {
+  animation: fadeInUp 0.6s ease-out forwards;
+  transition: all 0.3s ease;
+}
+
+.links:nth-child(1) { animation-delay: 0.2s; }
+.links:nth-child(2) { animation-delay: 0.4s; }
+.links:nth-child(3) { animation-delay: 0.6s; }
+
+.links:hover {
+  transform: translateX(10px) scale(1.05);
+  color: #ffd700 !important;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Animação do Mouse Flutuando */
+@keyframes mouseFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+.mouse {
+  animation: mouseFloat 2s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+.mouse:hover {
+  transform: scale(1.2) rotate(5deg);
+  filter: brightness(1.2);
+}
+
+/* Animação das Qualidades */
+@keyframes bounceIn {
+  0% { opacity: 0; transform: scale(0.3) translateY(50px); }
+  50% { transform: scale(1.05); }
+  70% { transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.focada, .criativa, .sociavel, .autodidata {
+  animation: bounceIn 0.8s ease-out forwards;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.focada { animation-delay: 0.1s; }
+.criativa { animation-delay: 0.2s; }
+.sociavel { animation-delay: 0.3s; }
+.autodidata { animation-delay: 0.4s; }
+
+.focada:hover, .criativa:hover, .sociavel:hover, .autodidata:hover {
+  transform: scale(1.2) rotate(5deg);
+  filter: brightness(1.3) drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+}
+
+/* Animação da Foto Soso com Parallax */
+.Soso {
+  transition: all 0.4s ease;
+  border-radius: 15px;
+}
+
+.Soso:hover {
+  transform: scale(1.03) translateZ(0);
+  filter: brightness(1.1) contrast(1.1);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Animação das Bolinhas da Timeline */
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(82, 20, 28, 0.7); }
+  70% { transform: scale(1.1); box-shadow: 0 0 0 10px rgba(82, 20, 28, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(82, 20, 28, 0); }
+}
+
+.bola1, .bola2, .bola3, .bola4 {
+  animation: pulse 2s infinite;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.bola1 { animation-delay: 0s; }
+.bola2 { animation-delay: 0.5s; }
+.bola3 { animation-delay: 1s; }
+.bola4 { animation-delay: 1.5s; }
+
+/* Animação dos Cards da Timeline - CORRIGIDO */
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translateX(-30px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  0% { opacity: 0; transform: translateX(30px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Aplicar animações apenas quando necessário, mantendo posicionamento original */
+.carde0.animate, .carde2.animate {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.carde1.animate, .carde3.animate {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+/* Hover 3D nos Cards */
+.card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 15px !important;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: translateY(-10px) rotateX(5deg) rotateY(5deg) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.card img {
+  transition: all 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+/* Animação dos Textos com Gradiente */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.who, .Sofia {
+  background: linear-gradient(45deg, #171516, #52141c, #962939, #171516);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 4s ease infinite;
+}
+
+.linha, .tempo {
+  background: linear-gradient(45deg, #ffffff, #ffd700, #ffffff, #f0f0f0);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease infinite;
+}
+
+/* Efeito de Entrada Suave nos Elementos */
+@keyframes fadeInScale {
+  0% { opacity: 0; transform: scale(0.8) translateY(20px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.data, .nacionalidade {
+  animation: fadeInScale 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.data { animation-delay: 0.3s; }
+.nacionalidade { animation-delay: 0.5s; }
+
+/* Hover nos Botões de Data e Nacionalidade */
+.data:hover, .nacionalidade:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  background-color: #52141c !important;
+}
+
+/* Animação da Timeline */
+.timething {
+  position: relative;
+  overflow: hidden;
+}
+
+.timething::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,215,0,0.4), transparent);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Scroll Suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hover no Menu */
+.menu a {
+  position: relative;
+  overflow: hidden;
+}
+
+.menu a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffd700, transparent);
+  transition: left 0.5s;
+}
+
+.menu a:hover::before {
+  left: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .estrela, .estrela2, .estrela-tempo {
+    animation-duration: 6s;
+  }
+  
+  .capa:hover {
+    transform: scale(1.02) rotateY(2deg);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px) scale(1.01);
+  }
+}
