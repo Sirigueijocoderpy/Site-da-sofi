@@ -1,0 +1,454 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+
+@font-face {
+    font-family: 'Glamore';
+    src: url('Glamore/Glamore.ttf') format('truetype'), url('Glamore/Glamore.otf') format('opentype');
+}
+
+
+@import url(' https://fonts.cdnfonts.com/css/banner ');
+
+
+
+
+/* Sistema de Grid */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+}
+
+body {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+header {
+    grid-area: header;
+    position: relative;
+    padding: 223px;
+    background-color: #962939;
+    color: white;
+    position: relative;
+    /* Para o posicionamento do menu */
+}
+
+
+
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Estilos do Menu */
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 20px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #f0f0f0;
+}
+
+.estrela {
+    position: absolute;
+    width: 55px;
+    height: auto;
+    top: 5px;
+
+
+}
+
+.nome {
+    position: absolute;
+    top: 1px;
+    left: 55px;
+    color: #f0f0f0;
+    font-size: 20px;
+
+}
+
+
+.capa {
+    position: absolute;
+    width: 390px;
+    height: auto;
+    top: 95px;
+    left: 180px;
+    z-index: 1;
+
+}
+
+.portifolio {
+    position: absolute;
+    letter-spacing: 20px;
+    font-size: 86px;
+    top: 5px;
+    left: 400px;
+    /* font-family: 'Glamore'; */
+    font-family: 'BANNER', sem serifa;
+    color: white;
+
+
+
+}
+
+
+.diferente {
+    position: absolute;
+    color: #421017;
+    /* font-family: 'Glamore'; */
+    font-family: 'BANNER', sem serifa;
+    top: 5px;
+    left: 400px;
+    letter-spacing: 20px;
+    font-size: 86px;
+    z-index: 2;
+}
+
+.buraco {
+    background-color: #962939;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 220px;
+    left: 960px;
+
+
+}
+
+.links{
+    margin-left: 20px;
+    text-decoration: none;
+    color:white;
+}
+
+
+.faixa-preta {
+    background-color: #171516;
+    padding: 90px;
+}
+
+/* //////////////////////////////////////// */
+
+.Sobremim {
+    position: relative;
+    padding: 245px;
+    color: antiquewhite;
+}
+
+.estrela2 {
+    position: absolute;
+    width: 55px;
+    height: auto;
+    top: 5px;
+    left: 2px;
+
+
+}
+
+.nome2 {
+    position: absolute;
+    top: 1px;
+    left: 55px;
+    color: #171516;
+    font-size: 20px;
+
+}
+
+.who {
+    position: absolute;
+    color: #171516;
+    font-size: 80px;
+    top: 30px;
+    left: 200px;
+    font-family: 'BANNER', sem serifa;
+    letter-spacing: 5px;
+}
+
+.Sofia {
+    position: absolute;
+    color: #171516;
+    font-size: 80px;
+    top: 110px;
+    left: 210px;
+    font-family: 'BANNER', sem serifa;
+    letter-spacing: 5px;
+
+}
+
+.texto-sobre {
+    position: absolute;
+    color: #171516;
+    left: 210px;
+    top: 270px;
+    font-size: 18px;
+}
+
+.mouse{
+    position: absolute;
+    width: 100px;
+    top: 170px;
+    left: 490px;
+}
+
+.marrom {
+    position: absolute;
+    background-color: #52141c;
+    width: 360px;
+    height: 490px;
+    top: 100px;
+    left: 880px;
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    width: 390px;
+    left: 865px;
+    top: 130px;
+}
+
+.Soso {
+    position: absolute;
+    width: 350px;
+    left: 877px;
+    top: 58px;
+    z-index: 2;
+}
+
+.Qualidades {
+    color:aliceblue;
+    position: absolute;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'BANNER', sem serifa;
+    left: 985px;
+    top: 480px;
+        letter-spacing: 2px;
+    z-index: 3;
+
+}
+
+.data {
+    position: absolute;
+    background-color: #171516;
+    border: 5px;
+    border: #171516;
+    z-index: 3;
+    padding: 7px;
+    border-radius: 20px;
+    color: aliceblue;
+
+        left: 760px;
+    top: 400px;
+}
+
+.nacionalidade {
+    color: aliceblue;
+    position: absolute;
+    background-color: #171516;
+    border: #171516;
+    top: 100px;
+    left: 1090px;
+    z-index: 3;
+    padding: 7px;
+    border-radius: 20px;
+    border: 3px;
+}
+
+.focada{
+    z-index: 4;
+position: absolute;
+width: 80px;
+height: auto;
+
+top: 518px;
+left: 920px;
+}
+
+.criativa{
+    z-index: 4;
+    position: absolute;
+    width: 68px;
+    height: auto;
+    
+    top: 522px;
+    left: 995px;
+
+}
+
+.sociavel{
+    z-index: 4;
+    position: absolute;
+    width: 80px;
+    height: auto;
+    
+    top: 518px;
+    left: 1050px;
+
+}
+
+.autodidata{
+    z-index: 4;
+    position: absolute;
+    width: 78px;
+    height: auto;
+    
+    top: 520px;
+    left: 1125px;
+    
+
+}
+
+/* Animação de pulsar */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Aplica a animação apenas no hover */
+.focada:hover, 
+.criativa:hover, 
+.sociavel:hover, 
+.autodidata:hover {
+    animation: pulse 0.8s ease-in-out;
+}
+
+/* Efeito de transição suave (opcional) */
+.focada, .criativa, .sociavel, .autodidata {
+    transition: transform 0.3s ease;
+}
+
+/* /////////////////////////////////////// */
+
+.linha-tempo {
+    position: relative;
+    background-color: #171516;
+    padding: 330px;
+}
+
+
+.estrela-tempo{
+    position: absolute;
+    width: 55px;
+    height: auto;
+    top: 5px;
+    left: 2px;
+}
+
+.linha{
+    position: absolute;
+    color: white;
+    font-family: 'BANNER', sem serifa;
+    font-size: 60px;
+    top: 20px;
+    left: 100px;
+}
+
+.tempo{
+    position: absolute;
+    color: white;
+    font-family: 'BANNER', sem serifa;
+    font-size: 60px;
+    top: 80px;
+    left: 100px;
+}
+/* ////////////// LINHA DO TEMPO ///////////////////////////////// */
+
+.timething{
+    
+    height: 4px;
+    border: 2px solid #52141c;
+    border-radius: 50px;
+    background-color: #f0f0f0;
+    width: 80%;
+    margin-top: 400px;
+
+
+
+}
+.timething .bola1{
+    position: absolute;
+    max-width: 80px;
+    top: 670px;
+    left: 350px;
+}
+.timething .bola2{
+    position: absolute;
+    max-width: 80px;
+    top: 720px;
+    left: 600px;
+}
+.timething .bola3{
+    position: absolute;
+    max-width: 80px;
+    top: 670px;
+    left: 950px;
+}
+.timething .bola4{
+    position: absolute;
+    max-width: 80px;
+    top: 720px;
+    left: 1250px;
+}
+.carde1, .carde2, .carde3, .carde4{
+    position:absolute;
+
+
+}
+.carde0{
+    bottom: 430px;
+    left: -40px;
+    
+}
+.carde1{
+    bottom: 330px;
+    left: 207px;
+}
+.carde2{
+    bottom: 1189px;
+    left: 560px;
+}
+.carde3{
+    bottom: 1089px;
+    left: 855px;
+}
+.linha-tempo{
+    height: 150vh;
+}
+
